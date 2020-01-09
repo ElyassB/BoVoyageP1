@@ -17,8 +17,21 @@ public class Destination {
 		this.description = description;
 	}
 	
+	
  
 	
+
+	public Destination(String nom, String description) {
+		super();
+		this.nom = nom;
+		this.description = description;
+	}
+	
+
+
+
+
+
 
 	public String getNom() {
 		return nom;
@@ -57,12 +70,7 @@ public class Destination {
 	}
 
 
-	public void setId(long id) {
-		this.id = id;
-	}
+	
 
-	public Destination() {
-		// TODO Auto-generated constructor stub
-	}
 
 }

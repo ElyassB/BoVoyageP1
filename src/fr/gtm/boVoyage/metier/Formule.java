@@ -21,6 +21,34 @@ public class Formule {
 	
 	
 	
+	public Formule(String nom, int nbPlaces, double prix, String description, LocalDate aller, LocalDate retour, String destination) {
+		super();
+		this.nom = nom;
+		this.nbPlaces = nbPlaces;
+		this.prix = prix;
+		this.description = description;
+		this.aller = aller;
+		this.retour = retour;
+		Destination = destination;
+		this.id = id;
+	}
+	
+	
+
+
+
+
+
+
+
+
+	public Formule(String voyage) {
+		super();
+		this.voyage = voyage;
+	}
+
+
+
 	public String getNom() {
 		return nom;
 	}
@@ -48,9 +76,7 @@ public class Formule {
 	public long getId() {
 		return id;
 	}
-	public void setId(long id) {
-		this.id = id;
-	}
+	
 	public LocalDate getAller() {
 		return aller;
 	}
@@ -66,9 +92,7 @@ public class Formule {
 	public String getVoyage() {
 		return voyage;
 	}
-	public void setVoyage(String voyage) {
-		this.voyage = voyage;
-	}
+	
 	public String getDestination() {
 		return Destination;
 	}

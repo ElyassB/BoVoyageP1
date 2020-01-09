@@ -6,10 +6,26 @@ public class Client {
 	private String numero;
 	private long id;
 	private int age;
+	private String voyage;
 	
 	
 	
 	
+	
+	
+	
+
+	public Client(String nom, String numero, int age, String voyage) {
+		super();
+		this.nom = nom;
+		this.numero = numero;
+		this.age = age;
+		this.voyage = voyage;
+	}
+
+
+
+
 
 	public String getNom() {
 		return nom;
@@ -46,13 +62,36 @@ public class Client {
 	public long getId() {
 		return id;
 	}
+	
+
+
+
+	public int getAge() {
+		return age;
+	}
 
 
 
 
 
-	public void setId(long id) {
-		this.id = id;
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+
+
+
+
+	public String getVoyage() {
+		return voyage;
+	}
+
+
+
+
+
+	public void setVoyage(String voyage) {
+		this.voyage = voyage;
 	}
 
 
